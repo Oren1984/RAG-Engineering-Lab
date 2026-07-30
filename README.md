@@ -1,13 +1,12 @@
-# 🧠 RAG Engineering Lab
+# RAG Engineering Lab
 
-**Oren Salami | 🧠 AI Systems Engineer**  
-Intelligent Systems • AI Agents • Data & Automation
+** Oren Salami | AI Systems Engineer **
 
 A local-first RAG retrieval evaluation system for comparing chunking strategies, embedding providers, vector stores, and retrieval quality using measurable IR metrics.
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 The **RAG Engineering Lab** is a modular, local-first system for building and evaluating the retrieval layer of Retrieval-Augmented Generation systems.
 
@@ -24,7 +23,7 @@ It is a retrieval quality lab designed to measure, compare, and explain how diff
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 The purpose of this project is to demonstrate how to design, implement, evaluate, and present a professional RAG retrieval system.
 
@@ -41,7 +40,7 @@ This project demonstrates:
 
 ---
 
-## 🚀 Core Capabilities
+## Core Capabilities
 
 - Local-first RAG retrieval pipeline
 - Streamlit UI with four main tabs
@@ -69,7 +68,7 @@ This project demonstrates:
 
 ---
 
-## 🧱 Architecture & System Design
+## Architecture & System Design
 
 The system is built around a thin orchestration layer called RAGPipeline.
 
@@ -129,7 +128,7 @@ The architecture is intentionally modular so that each component can be replaced
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 Layer	            Technologies
 Language	      Python 3.11
@@ -151,7 +150,7 @@ Testing	      Pytest, smoke checks, E2E mock-mode validation
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 rag-retrieval-evaluation-lab/
 ├── app/
@@ -197,7 +196,7 @@ rag-retrieval-evaluation-lab/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 Clone the repository:
 
@@ -260,7 +259,7 @@ http://localhost:8511
 
 ---
 
-## 🐳 Docker
+## Docker
 
 Build and run with Docker Compose:
 
@@ -281,7 +280,7 @@ results/
 
 ---
 
-## 🧪 Evaluation Workflow
+## Evaluation Workflow
 
 The evaluation layer measures retrieval quality against ground-truth questions.
 
@@ -312,7 +311,7 @@ results/evaluation_results.csv
 
 ---
 
-## 📓 Demo Notebooks
+## Demo Notebooks
 
 The project includes two educational notebooks:
 
@@ -327,7 +326,7 @@ Both notebooks run in mock mode by default and do not require OpenAI or Gemini A
 
 ---
 
-## 🌐 Static Portfolio Site
+## Static Portfolio Site
 
 The repository includes a standalone static portfolio page:
 
@@ -342,7 +341,7 @@ python -m http.server 8000
 
 Open:
 
-http://localhost:8000
+'http://localhost:8000'
 
 The static site is built with:
 
@@ -363,7 +362,7 @@ The static site presents:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Run tests:
 
@@ -391,7 +390,7 @@ This allows tests and smoke checks to run without paid API keys or external serv
 
 ---
 
-## 📊 Observability
+## Observability
 
 The project includes lightweight local observability.
 
@@ -418,7 +417,7 @@ src/observability/health.py
 
 ---
 
-## 🔐 Security
+## Security
 
 The system includes practical local security controls.
 
@@ -440,7 +439,7 @@ This is not an enterprise security product, but it demonstrates secure defaults 
 
 ---
 
-## 🧩 What This Project Demonstrates
+## What This Project Demonstrates
 
 This project demonstrates my ability to:
 
@@ -458,7 +457,7 @@ This project demonstrates my ability to:
 
 ---
 
-## 📌 Current Status
+## Current Status
 
 Status: Portfolio-ready / Local-first / Tested through mock-mode E2E validation
 
@@ -481,7 +480,7 @@ The project is ready for portfolio presentation and technical review.
 
 ---
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 - Mock embeddings are deterministic but not semantic
 - Evaluation with mock embeddings validates plumbing, not semantic retrieval quality
@@ -497,7 +496,7 @@ The project is ready for portfolio presentation and technical review.
 
 ---
 
-## 🏁 Final Note
+## Final Note
 
 This project is part of my AI Engineering portfolio.
 
@@ -508,7 +507,7 @@ The goal is to show how retrieval quality can be engineered, tested, evaluated, 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
