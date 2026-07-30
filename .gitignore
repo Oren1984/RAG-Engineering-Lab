@@ -1,22 +1,18 @@
-# ============================================================
-# RAG Retrieval Evaluation Lab — .gitignore
-# ============================================================
-
-# ── Environment files ────────────────────────────────────────
+# Environment files
 .env
 .env.local
 .env.*.local
 # Keep the template
 !.env.example
 
-# ── Python bytecode and cache ────────────────────────────────
+# Python bytecode and cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyo
 *.pyd
 
-# ── Test / coverage artifacts ────────────────────────────────
+# Test / coverage artifacts
 .pytest_cache/
 .coverage
 .coverage.*
@@ -24,34 +20,34 @@ htmlcov/
 coverage.xml
 *.cover
 
-# ── Type checker caches ──────────────────────────────────────
+# Type checker caches
 .mypy_cache/
 .ruff_cache/
 .dmypy.json
 dmypy.json
 
-# ── Jupyter ──────────────────────────────────────────────────
+# Jupyter
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-# ── Vector store runtime data ────────────────────────────────
+# Vector store runtime data
 # Keep .gitkeep placeholders, ignore everything else
 vector_db/chroma/*
 !vector_db/chroma/.gitkeep
 vector_db/faiss/*
 !vector_db/faiss/.gitkeep
 
-# ── Runtime results ──────────────────────────────────────────
+# Runtime results
 results/*
 !results/.gitkeep
 
-# ── Uploaded / processed data ────────────────────────────────
+# Uploaded / processed data
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
 
-# ── OS artifacts ─────────────────────────────────────────────
+# OS artifacts
 .DS_Store
 .DS_Store?
 ._*
@@ -60,14 +56,14 @@ data/processed/*
 Thumbs.db
 desktop.ini
 
-# ── Editor / IDE ─────────────────────────────────────────────
+# Editor / IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# ── Build / packaging ────────────────────────────────────────
+#  Build / packaging
 dist/
 build/
 *.egg-info/
@@ -75,14 +71,23 @@ build/
 .eggs/
 MANIFEST
 
-# ── Logs ─────────────────────────────────────────────────────
+# Logs
 *.log
 logs/
 
-# ── Pip / virtualenv ─────────────────────────────────────────
+# Pip / virtualenv
 pip-log.txt
 pip-delete-this-directory.txt
 .venv/
 venv/
 env/
 ENV/
+
+# AI assistant workspace
+.claude/
+
+# Internal prompts
+prompts/
+
+# Internal documentation
+docs/
