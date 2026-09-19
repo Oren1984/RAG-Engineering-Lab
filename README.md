@@ -126,6 +126,24 @@ src/observability/
 
 The architecture is intentionally modular so that each component can be replaced without rewriting the full system.
 
+See [docs/architecture.md](docs/architecture.md) for a full layer-by-layer breakdown, including class-level design decisions.
+
+---
+
+## Documentation
+
+Detailed technical documentation lives in [docs/](docs/):
+
+| Document | Covers |
+|----------|--------|
+| [docs/architecture.md](docs/architecture.md) | Layer-by-layer system design |
+| [docs/API_KEYS_GUIDE.md](docs/API_KEYS_GUIDE.md) | Environment variables and API key setup |
+| [docs/evaluation_report.md](docs/evaluation_report.md) | Metric definitions and a baseline mock-mode evaluation run |
+| [docs/experiment_plan.md](docs/experiment_plan.md) | How to design controlled retrieval experiments |
+| [docs/security_observability.md](docs/security_observability.md) | Security controls and the observability layer in detail |
+| [docs/testing_strategy.md](docs/testing_strategy.md) | Test layers, current test scaffolding status, and manual smoke checks |
+| [docs/known_limitations.md](docs/known_limitations.md) | Intentional v1 design boundaries and scope exclusions |
+
 ---
 
 ## Tech Stack
@@ -146,7 +164,7 @@ Security	      File validation, query validation, prompt safety, PII redaction
 Packaging	      Docker, Docker Compose
 Notebooks	      Jupyter notebooks
 Static Site	      HTML, CSS, Vanilla JavaScript
-Testing	      Pytest, smoke checks, E2E mock-mode validation
+Testing	      Pytest (scaffolded; see docs/testing_strategy.md), mock-mode manual smoke checks
 
 ---
 
@@ -161,6 +179,14 @@ rag-retrieval-evaluation-lab/
 │   ├── raw/
 │   └── processed/
 ├── docs/
+│   ├── README.md
+│   ├── architecture.md
+│   ├── API_KEYS_GUIDE.md
+│   ├── evaluation_report.md
+│   ├── experiment_plan.md
+│   ├── security_observability.md
+│   ├── testing_strategy.md
+│   └── known_limitations.md
 ├── notebooks/
 │   ├── rag_retrieval_demo.ipynb
 │   └── rag_evaluation_experiments.ipynb
@@ -309,6 +335,8 @@ Output:
 
 results/evaluation_results.csv
 
+See [docs/evaluation_report.md](docs/evaluation_report.md) for metric definitions, a baseline mock-mode run, and known limitations of the evaluation, and [docs/experiment_plan.md](docs/experiment_plan.md) for how to run controlled comparisons across chunkers, embedding providers, and vector stores.
+
 ---
 
 ## Demo Notebooks
@@ -388,6 +416,8 @@ EMBEDDING_PROVIDER=mock
 
 This allows tests and smoke checks to run without paid API keys or external services.
 
+The test directories (`tests/unit/`, `tests/integration/`, `tests/e2e/`) currently provide scaffolding only — see [docs/testing_strategy.md](docs/testing_strategy.md) for the current test coverage status, intended test layers, and manual smoke-check procedures.
+
 ---
 
 ## Observability
@@ -414,6 +444,8 @@ Observability modules:
 src/observability/metrics.py
 src/observability/tracing.py
 src/observability/health.py
+
+See [docs/security_observability.md](docs/security_observability.md) for full detail on both the observability and security layers.
 
 ---
 
@@ -459,7 +491,7 @@ This project demonstrates my ability to:
 
 ## Current Status
 
-Status: Portfolio-ready / Local-first / Tested through mock-mode E2E validation
+Status: Portfolio-ready / Local-first / Validated through manual mock-mode smoke checks
 
 Completed:
 
@@ -493,6 +525,8 @@ The project is ready for portfolio presentation and technical review.
 - No agents, MCP, or CrewAI
 - No Kubernetes or Terraform deployment in v1
 - No cloud deployment automation in v1
+
+See [docs/known_limitations.md](docs/known_limitations.md) for the full list with rationale and workarounds.
 
 ---
 

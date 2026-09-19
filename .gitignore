@@ -88,6 +88,3 @@ ENV/
 
 # Internal prompts
 prompts/
-
-# Internal documentation
-docs/
